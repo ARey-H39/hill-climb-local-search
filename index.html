@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Document</title> -->
+    <link rel="stylesheet" href="./src/css/styles.css">
+</head>
+<body>
+    <header class="header"></header>
+
+    <section class="sidebar">
+        <div class="page-title">nQueens | Local Search | Hill Climbing</div>
+        <div class="current-state-container"></div>
+        <div class="current-state-label">Current state: -</div>
+        <div class="current-state-collisions">Collisions: -</div>
+        <div class="solution-status" data-status="">-</div>
+        <div class="path-section-header">States</div>
+        <div class="path-container">
+            <!-- <div class="path-state-container current" data-state-id="0">
+                <div class="path-state-number">0</div>
+                <div class="path-state">0, 3, 1, 2</div>
+                <div class="path-state-collisions">3</div>
+            </div> -->
+        </div>
+        <div class="state-controls">
+            <div class="state-controls-btn previous-state-btn">
+                <span class="'btn-label">Previous</span>
+            </div>
+            <div class="state-controls-btn next-state-btn">
+                <span class="'btn-label">Next</span>
+            </div>
+        </div>
+    </section>
+
+    <main class="main">
+        <div class="best-neighbor-container">
+            <div class="best-neighbor-heading">Best Neighbor</div>
+            <div class="best-neighbor-board"></div>
+            <div class="best-neighbor-info">
+                <div class="best-neighbor-id">State: -</div>
+                <div class="best-neighbor-array">-</div>
+                <div class="best-neighbor-collisions">Collisions: -</div>
+            </div>
+            
+            <div class="best-neighbor-status" data-status="">-</div>
+        </div>
+
+        <div class="all-neighbors-container">
+            <div class="neighbors-container">
+                <div class="neighbor-state reject">
+                    <div class="neighbor-id">State: 0</div>
+                    <div class="neighbor-array">0, 1, 2, 3</div>
+                    <div class="neighbor-collisions">Collisions: 4</div>
+                </div>
+                <div class="neighbor-state">
+                    <div class="neighbor-id">State: 0</div>
+                    <div class="neighbor-array">0, 1, 2, 3</div>
+                    <div class="neighbor-collisions">Collisions: 4</div>
+                </div>
+            </div>
+            <div class="neighbor-view">
+                <div class="neighbor-container"></div>
+                <div class="neighbor-controls">
+                    <div class="neighbor-controls-btn neighbor-controls-btn--prev">Previous</div>
+                    <div class="neighbor-controls-btn neighbor-controls-btn--next">Next</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="best-neighbor-container">
+            <div class="best-neighbor-board"></div>
+        </div>
+
+        <div class="neighbors-content">
+            <div class="neighbors-container">
+                <div class="neighbor-state reject">
+                    <div class="neighbor-id">State: 0</div>
+                    <div class="neighbor-array">0, 1, 2, 3</div>
+                    <div class="neighbor-collisions">Collisions: 4</div>
+                </div>
+                <div class="neighbor-state">
+                    <div class="neighbor-id">State: 0</div>
+                    <div class="neighbor-array">0, 1, 2, 3</div>
+                    <div class="neighbor-collisions">Collisions: 4</div>
+                </div>
+            </div>
+            <div class="neighbor-view-container"></div>
+        </div> -->
+        
+    </main>
+
+    <script src="./src/js/main.js" type="module"></script>
+</body>
+</html>
